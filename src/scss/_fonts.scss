@@ -6,7 +6,6 @@ $fonts: (
 
 @mixin font-face {
   @each $font-family, $font-weights in $fonts {
-    //$font-weights: map-get($fonts, $font);
     @each $weight, $file-name in $font-weights {
       @font-face {
         font-weight: $weight;
