@@ -1,9 +1,3 @@
-@import "colors";
-@import "fonts";
-@import "reset";
-@import "base";
-@import "grids";
-
 body {
   font: 400 18px/1.5 "#{$base-font-family}", sans-serif;
   color: $dark-gray;

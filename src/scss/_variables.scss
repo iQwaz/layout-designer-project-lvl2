@@ -1,10 +1,20 @@
+// Colors
+$black: #08020d;
+$gray: #e0e0e0;
+$dark-gray: #cacaca;
+$dark: #3c3b3d;
+$green: #34c176;
+$orange: #f89202;
+$purple: #5328a1;
+$red: #95390c;
+
 // All mixins and global variables
 
 $breakpoints: (
   breakpoint-mobile: 414px,
   breakpoint-small: 768px,
   breakpoint-medium: 992px,
-  breakpoint-large: 1200px
+  breakpoint-large: 1240px
 );
 
 @mixin media($breakpoint: "small", $breakpoint-width: null) {
