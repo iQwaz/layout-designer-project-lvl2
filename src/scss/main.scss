@@ -1,0 +1,29 @@
+@import "colors";
+@import "fonts";
+@import "reset";
+@import "base";
+@import "grids";
+
+body {
+  font: 400 18px/1.5 "#{$base-font-family}", sans-serif;
+  color: $dark-gray;
+  background: $black;
+}
+
+h1 {
+  font: 700 60px/90px;
+  text-transform: capitalize;
+  @include media("mobile") {
+    font: 700 30px/45px;
+    text-transform: capitalize;
+  }
+}
+
+h2 {
+  font: 700 38px/57px;
+  text-transform: capitalize;
+  @include media("mobile") {
+    font: 700 18px/27px;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,24 @@
+/* Fonts: */
+//Font table:
+$fonts: (
+        "Roboto":   (400: "Roboto-Regular.ttf", 500: "Roboto-Medium.ttf", 700: "Roboto-Bold.ttf")
+        );
+
+@mixin font-face {
+  @each $font-family, $font-weights in $fonts {
+    //$font-weights: map-get($fonts, $font);
+    @each $weight, $file-name in $font-weights {
+      @font-face {
+        font-weight: $weight;
+        font-family: "#{$font-family}";
+        src: url("../fonts/#{$file-name}");
+      }
+    }
+  }
+  
+}
+
+@include font-face;
+
+// Fonts variables:
+$base-font-family: "Roboto";
