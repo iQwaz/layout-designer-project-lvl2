@@ -5,17 +5,110 @@ body {
 }
 
 h1 {
-  font: 700 60px/90px;
-  text-transform: capitalize;
+  font-size: 60px;
+  line-height: 90px;
   @include media("mobile") {
-    font: 700 30px/45px;
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 
 h2 {
-  font: 700 38px/57px;
-  text-transform: capitalize;
+  font-size: 38px;
+  line-height: 57px;
   @include media("mobile") {
-    font: 700 18px/27px;
+    font-size: 18px;
+    line-height: 27px;
   }
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Atomic styles: */
+.maxw-1200 {
+  max-width: 1200px;
+}
+
+.maxw-570 {
+  max-width: 570px;
+}
+
+.px-20 {
+  padding: 0 20px;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.py-200 {
+  padding: 200px 0;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.flex-grow {
+  flex-grow: 1;
+  min-width: 273px;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
 }

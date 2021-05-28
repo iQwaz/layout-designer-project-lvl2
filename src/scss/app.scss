@@ -3,3 +3,32 @@
 @import "reset";
 @import "grids";
 @import "general";
+
+
+.background-main {
+  background: no-repeat center/cover url("../images/banner.png");
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.input-main {
+  
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  border: solid 2px $dark-gray;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $white;
+}
+
+.btn {
+  text-align: center;
+  color: $white;
+  border-radius: 5px;
+}
+
+.btn-green {
+  background-color: $green;
+}

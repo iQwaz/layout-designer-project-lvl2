@@ -7,12 +7,13 @@ $green: #34c176;
 $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
+$white: #ffffff;
 
 // All mixins and global variables
 
 $breakpoints: (
   breakpoint-mobile: 414px,
-  breakpoint-small: 768px,
+  breakpoint-small: 609px,
   breakpoint-medium: 992px,
   breakpoint-large: 1240px
 );
