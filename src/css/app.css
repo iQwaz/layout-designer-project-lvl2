@@ -67,6 +67,63 @@ button {
   cursor: pointer;
 }
 
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 50px;
+  column-gap: 50px;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
+
+.span-6 {
+  grid-column: span 6;
+}
+
+.span-7 {
+  grid-column: span 7;
+}
+
+.span-8 {
+  grid-column: span 8;
+}
+
+.span-9 {
+  grid-column: span 9;
+}
+
+.span-10 {
+  grid-column: span 10;
+}
+
+.span-11 {
+  grid-column: span 11;
+}
+
+.span-12 {
+  grid-column: span 12;
+}
+
 body {
   font: 400 18px/1.5 "Roboto", sans-serif;
   color: #cacaca;
@@ -80,7 +137,6 @@ h1 {
 @media screen and (max-width: 414px) {
   h1 {
     font: 700 30px/45px;
-    text-transform: capitalize;
   }
 }
 
@@ -91,6 +147,5 @@ h2 {
 @media screen and (max-width: 414px) {
   h2 {
     font: 700 18px/27px;
-    text-transform: capitalize;
   }
 }
