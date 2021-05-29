@@ -1,4 +1,6 @@
 body {
+  position: relative;
+  min-width: 320px;
   font: 400 18px/1.5 "#{$base-font-family}", sans-serif;
   color: $dark-gray;
   background: $black;
@@ -7,6 +9,10 @@ body {
 h1 {
   font-size: 60px;
   line-height: 90px;
+  @include media("small") {
+    font-size: 45px;
+    line-height: 57px;
+  }
   @include media("mobile") {
     font-size: 30px;
     line-height: 45px;
@@ -16,6 +22,10 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 57px;
+  @include media("small") {
+    font-size: 27px;
+    line-height: 43px;
+  }
   @include media("mobile") {
     font-size: 18px;
     line-height: 27px;
@@ -55,6 +65,23 @@ p {
 .mx-auto {
   margin: 0 auto;
 }
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -63,22 +90,24 @@ p {
   margin-bottom: 32px;
 }
 
+.top-25 {
+  top: 25px;
+}
+
 .absolute {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   
-}
-
-.flex-grow {
-  flex-grow: 1;
-  min-width: 273px;
 }
 
 .capitalized {
@@ -95,6 +124,10 @@ p {
 
 .bold {
   font-weight: 700;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
 }
 
 .sr-only {

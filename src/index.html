@@ -10,33 +10,34 @@
 
 </head>
 <body>
-  <header style="display: none" class="absolute">
-    <div class="logo flex">
-        <img src="./images/logo.svg" alt="MusicBox Logo">
-        <span class="text-logo">Music Box</span>
-    </div>
+  <div class="content maxw-1200 relative">
+  <header class="absolute flex top-25">
+      <a class="logo-link flex no-wrap uppercase bold" href="#">
+        <img class="logo mr-16" src="./images/logo.svg" alt="MusicBox Logo">
+        <span class="header-text">Music Box</span>
+      </a>
     <nav> 
-      <ul class="menu flex">
-        <li class="menu-item">Главная</li>
-        <li class="menu-item">Каталог</li>
-        <li class="menu-item">Исполнители</li>
-        <li class="menu-item">Контакты</li>
+      <ul class="header-text menu flex uppercase bold">
+        <li class="menu-item mr-24">Главная</li>
+        <li class="menu-item mr-24">Каталог</li>
+        <li class="menu-item mr-24">Исполнители</li>
+        <li class="menu-item mr-24">Контакты</li>
       </ul>
     </nav>
   </header>
   </div>
   <main>
       <section id="page-description" class="background-main px-20">
-        <div class="content grid-row py-200 maxw-1200">
+        <div class="content py-200 maxw-1200">
           <h1 class="bold uppercase center">Онлайн музыка где угодно</h1>
           <h2 class="bold uppercase center mb-32">Без ограничений</h2>
           <p class="center mb-16">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-          <form action="#" class="grid-form mx-auto">
+          <form action="#" class="grid-form mx-auto maxw-570">
             <label for="user-name" class="sr-only">Имя пользователя:</label>
             <input type="text" name="user-name" id="user-name" class="input-main bold pl-20" placeholder="Имя">
             <label for="user-email" class="sr-only">E-mail:</label>
             <input type="e-mail" name="user-email" id="user-email" class="input-main bold pl-20" placeholder="Email">
-            <button type="submit" class="btn btn-green uppercase py-20 span-2">Получить доступ</button>
+            <button type="submit" class="btn btn-access btn-green uppercase py-20 span-2">Получить доступ</button>
           </form>
         </div>
       </section>

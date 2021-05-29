@@ -11,15 +11,10 @@
 
 .grid-form {
   display: grid;
-  grid-template-columns: repeat(2, minmax(273px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
   justify-content: space-between;
   grid-column-gap: 24px;
   column-gap: 24px;
-}
-
-.grid-row {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, auto);
 }
 
 @media screen {
@@ -30,10 +25,8 @@
   @for $n from 1 through 12 {
     .span-#{$n} {
       grid-column: span #{$n};
-      @include media (small) {
-        grid-column: span 1;
-      }
     }
+
     .column-start-#{$n} {
       grid-column-start: #{$n};
     }

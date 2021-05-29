@@ -13,8 +13,39 @@
   margin: 0 auto;
 }
 
+.logo-link {
+  margin-right: 88px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 24px;
+}
+
+.header-text {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.menu {
+  @include media("mobile") {
+    flex-direction: column;
+    margin-top: 17px;
+  }
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: $white;
+}
+
 .input-main {
-  
+  box-sizing: border-box;
+  max-width: 100%;
   min-height: 50px;
   margin-bottom: 1.5rem;
   border: solid 2px $dark-gray;
@@ -27,6 +58,12 @@
   text-align: center;
   color: $white;
   border-radius: 5px;
+}
+
+.btn-access {
+  @include media (small) {
+    grid-column: span 1;
+  }
 }
 
 .btn-green {
