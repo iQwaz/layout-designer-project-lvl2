@@ -9,6 +9,20 @@
   column-gap: 50px;
 }
 
+.grid-header {
+  display: grid;
+  grid-template-columns: 188px minmax(374px, 1fr) 248px;
+  align-items: center;
+
+  width: 100%;
+
+  @include media("small"){
+    grid-template-columns: unset;
+    grid-template-rows: repeat(3, auto);
+
+  }
+}
+
 .grid-form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
@@ -17,9 +31,6 @@
   column-gap: 24px;
 }
 
-@media screen {
-  
-}
 
 @mixin column-span {
   @for $n from 1 through 12 {

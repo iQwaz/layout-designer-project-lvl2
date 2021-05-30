@@ -43,6 +43,24 @@
   color: $white;
 }
 
+.input-search {
+  box-sizing: border-box;
+  width: 248px;
+  height: 25px;
+  
+  font: 400 13.3px/15px "Arial", sans-serif;
+  color: #757575;
+
+  border: none;
+  border-radius: 12.5px;
+
+  background-color: $dark;
+
+  @include media(small) {
+    width: 100%
+  }
+}
+
 .input-main {
   box-sizing: border-box;
   max-width: 100%;
