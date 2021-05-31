@@ -32,7 +32,7 @@
   @include media ("medium"){
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-column: span 3;
+    grid-column: span 6;
 
     margin-left: 20px;
   }
@@ -41,7 +41,7 @@
 .menu {
   @include media("mobile") {
     flex-direction: column;
-    margin-top: 17px;
+    align-items: flex-start;
   }
 }
 
@@ -54,18 +54,22 @@
 }
 
 .form-search {
+  box-sizing: border-box;
   grid-column-end: -1;
   grid-column: span 2;
   @include media("medium") {
     grid-column: span 5;
   }
+  @include media("mobile") {
+    grid-row-start: 3;
+    grid-column: span 1;
+  }
 }
 
 .input-search {
-  // box-sizing: border-box;
-  min-width: 248px;
+  box-sizing: border-box;
   height: 25px;
-  
+  min-width: 248px;
   font: 400 13.3px/15px "Arial", sans-serif;
   color: #757575;
 
@@ -73,6 +77,10 @@
   border-radius: 12.5px;
 
   background-color: $dark;
+
+  @include media("mobile") {
+    min-width: 374px;
+  }
 
 }
 

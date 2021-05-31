@@ -83,6 +83,12 @@ button {
   row-gap: 17px;
   align-items: center;
 }
+@media screen and (max-width: 414px) {
+  .grid-header {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
 
 .grid-form {
   display: grid;
@@ -443,7 +449,7 @@ p {
   .navigation {
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-column: span 3;
+    grid-column: span 6;
     margin-left: 20px;
   }
 }
@@ -451,7 +457,7 @@ p {
 @media screen and (max-width: 414px) {
   .menu {
     flex-direction: column;
-    margin-top: 17px;
+    align-items: flex-start;
   }
 }
 
@@ -464,6 +470,7 @@ p {
 }
 
 .form-search {
+  box-sizing: border-box;
   grid-column-end: -1;
   grid-column: span 2;
 }
@@ -472,15 +479,27 @@ p {
     grid-column: span 5;
   }
 }
+@media screen and (max-width: 414px) {
+  .form-search {
+    grid-row-start: 3;
+    grid-column: span 1;
+  }
+}
 
 .input-search {
-  min-width: 248px;
+  box-sizing: border-box;
   height: 25px;
+  min-width: 248px;
   font: 400 13.3px/15px "Arial", sans-serif;
   color: #757575;
   border: none;
   border-radius: 12.5px;
   background-color: #3c3b3d;
+}
+@media screen and (max-width: 414px) {
+  .input-search {
+    min-width: 374px;
+  }
 }
 
 .input-main {
