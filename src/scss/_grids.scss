@@ -11,16 +11,11 @@
 
 .grid-header {
   display: grid;
-  grid-template-columns: 188px minmax(374px, 1fr) 248px;
+  width: 100%;
+  grid-template-columns:  repeat(6, 1fr);
+  row-gap: 17px;
   align-items: center;
 
-  width: 100%;
-
-  @include media("small"){
-    grid-template-columns: unset;
-    grid-template-rows: repeat(3, auto);
-
-  }
 }
 
 .grid-form {

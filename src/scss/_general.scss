@@ -87,12 +87,20 @@ p {
   margin-left: 16px;
 }
 
+.ml-20 {
+  margin-left: 20px;
+}
+
 .ml-24 {
   margin-left: 24px;
 }
 
 .mr-16 {
   margin-right: 16px;
+}
+
+.mr-20 {
+  margin-right: 20px;
 }
 
 .mr-24 {
@@ -107,8 +115,10 @@ p {
   margin-bottom: 32px;
 }
 
-.top-25 {
+.header-position {
   top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .absolute {
@@ -126,8 +136,8 @@ p {
   
 }
 
-.flex-grow-1 {
-  flex-grow: 1;
+.self-right {
+  justify-self: right;
 }
 
 .capitalized {

@@ -14,7 +14,7 @@
 }
 
 .logo-link {
-  margin-right: 88px;
+  min-width: 100px;
   text-decoration: none;
   color: inherit;
 }
@@ -26,6 +26,16 @@
 .header-text {
   font-size: 11px;
   line-height: 13px;
+}
+
+.navigation {
+  @include media ("medium"){
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column: span 3;
+
+    margin-left: 20px;
+  }
 }
 
 .menu {
@@ -43,9 +53,17 @@
   color: $white;
 }
 
+.form-search {
+  grid-column-end: -1;
+  grid-column: span 2;
+  @include media("medium") {
+    grid-column: span 5;
+  }
+}
+
 .input-search {
-  box-sizing: border-box;
-  width: 248px;
+  // box-sizing: border-box;
+  min-width: 248px;
   height: 25px;
   
   font: 400 13.3px/15px "Arial", sans-serif;
@@ -56,9 +74,6 @@
 
   background-color: $dark;
 
-  @include media(small) {
-    width: 100%
-  }
 }
 
 .input-main {
