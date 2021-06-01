@@ -14,7 +14,7 @@
 }
 
 .logo-link {
-  min-width: 100px;
+  min-width: 168px;
   text-decoration: none;
   color: inherit;
 }
@@ -29,13 +29,7 @@
 }
 
 .navigation {
-  @include media ("medium"){
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column: span 6;
-
-    margin-left: 20px;
-  }
+  min-width: 340px;
 }
 
 .menu {
@@ -55,21 +49,16 @@
 
 .form-search {
   box-sizing: border-box;
-  grid-column-end: -1;
-  grid-column: span 2;
-  @include media("medium") {
-    grid-column: span 5;
-  }
-  @include media("mobile") {
-    grid-row-start: 3;
-    grid-column: span 1;
+  min-width: 248px;
+  @include media("small") {
+    width: 100%;
   }
 }
 
 .input-search {
   box-sizing: border-box;
   height: 25px;
-  min-width: 248px;
+  width: 100%;
   font: 400 13.3px/15px "Arial", sans-serif;
   color: #757575;
 
@@ -77,10 +66,6 @@
   border-radius: 12.5px;
 
   background-color: $dark;
-
-  @include media("mobile") {
-    min-width: 374px;
-  }
 
 }
 

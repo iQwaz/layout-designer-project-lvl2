@@ -12,14 +12,8 @@
 .grid-header {
   display: grid;
   width: 100%;
-  grid-template-columns:  repeat(6, 1fr);
-  row-gap: 17px;
+  grid-template-columns: 188px 1fr 268px;
   align-items: center;
-  @include media("mobile") {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-
 }
 
 .grid-form {

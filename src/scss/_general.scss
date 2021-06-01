@@ -10,6 +10,7 @@ h1 {
   font-size: 60px;
   line-height: 90px;
   @include media("small") {
+    padding-top: 50px;
     font-size: 45px;
     line-height: 57px;
   }
@@ -115,6 +116,10 @@ p {
   margin-bottom: 32px;
 }
 
+.w-100pr {
+  width: 100%;
+}
+
 .header-position {
   top: 25px;
   left: 50%;
@@ -134,6 +139,18 @@ p {
   flex-wrap: wrap;
   align-items: center;
   
+}
+
+.gap-17{
+  row-gap: 17px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .self-right {
