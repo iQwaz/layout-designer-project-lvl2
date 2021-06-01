@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 60px;
   line-height: 90px;
+  color: $white;
   @include media("small") {
     padding-top: 47px;
     font-size: 45px;
@@ -23,6 +24,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 57px;
+  color: $white;
   @include media("small") {
     font-size: 27px;
     line-height: 43px;

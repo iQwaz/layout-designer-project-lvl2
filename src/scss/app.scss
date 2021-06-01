@@ -16,7 +16,7 @@
 .logo-link {
   min-width: 168px;
   text-decoration: none;
-  color: inherit;
+  color: $white;
 }
 
 .logo {
@@ -44,7 +44,7 @@
 }
 
 .menu-item:hover {
-  color: $white;
+  color: $gray;
 }
 
 .form-search {

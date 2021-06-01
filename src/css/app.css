@@ -246,6 +246,7 @@ body {
 h1 {
   font-size: 60px;
   line-height: 90px;
+  color: #ffffff;
 }
 @media screen and (max-width: 609px) {
   h1 {
@@ -264,6 +265,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 57px;
+  color: #ffffff;
 }
 @media screen and (max-width: 609px) {
   h2 {
@@ -460,7 +462,7 @@ p {
 .logo-link {
   min-width: 168px;
   text-decoration: none;
-  color: inherit;
+  color: #ffffff;
 }
 
 .logo {
@@ -488,7 +490,7 @@ p {
 }
 
 .menu-item:hover {
-  color: #ffffff;
+  color: #e0e0e0;
 }
 
 .form-search {
