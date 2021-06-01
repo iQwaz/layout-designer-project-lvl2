@@ -48,6 +48,7 @@
 }
 
 .form-search {
+  line-height: 15px;
   box-sizing: border-box;
   min-width: 248px;
   @include media("small") {
@@ -77,12 +78,14 @@
   border: solid 2px $dark-gray;
   border-radius: 3px;
   background-color: transparent;
+  font: 400 14px/16px "Roboto", sans-serif;
   color: $white;
 }
 
 .btn {
   text-align: center;
   color: $white;
+  font: 400 13.3px/15px "Arial", sans-serif;
   border-radius: 5px;
 }
 

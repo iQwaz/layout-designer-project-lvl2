@@ -10,7 +10,7 @@ h1 {
   font-size: 60px;
   line-height: 90px;
   @include media("small") {
-    padding-top: 50px;
+    padding-top: 47px;
     font-size: 45px;
     line-height: 57px;
   }
@@ -58,6 +58,10 @@ p {
 
 .py-20 {
   padding: 20px 0;
+}
+
+.py-21 {
+  padding: 21px 0;
 }
 
 .py-200 {
@@ -116,6 +120,13 @@ p {
   margin-bottom: 32px;
 }
 
+.mb-32-adaptive {
+  margin-bottom: 32px;
+  @include media("small") {
+    margin-bottom: 16px;
+  }
+}
+
 .w-100pr {
   width: 100%;
 }
@@ -139,6 +150,10 @@ p {
   flex-wrap: wrap;
   align-items: center;
   
+}
+
+.gap-3{
+  row-gap: 3px;
 }
 
 .gap-17{
