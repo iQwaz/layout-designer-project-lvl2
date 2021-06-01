@@ -451,14 +451,6 @@ p {
   clip: rect(0, 0, 0, 0);
 }
 
-.background-main {
-  background: no-repeat center/cover url("../images/banner.png");
-}
-
-.content {
-  margin: 0 auto;
-}
-
 .logo-link {
   min-width: 168px;
   text-decoration: none;
@@ -542,4 +534,12 @@ p {
 
 .btn-green {
   background-color: #34c176;
+}
+
+.background-main {
+  background: no-repeat center/cover url("../images/banner.png");
+}
+
+.content {
+  margin: 0 auto;
 }

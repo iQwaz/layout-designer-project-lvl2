@@ -1,0 +1,43 @@
+
+.input-search {
+  box-sizing: border-box;
+  height: 25px;
+  width: 100%;
+  font: 400 13.3px/15px "Arial", sans-serif;
+  color: #757575;
+
+  border: none;
+  border-radius: 12.5px;
+
+  background-color: $dark;
+
+}
+
+.input-main {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  border: solid 2px $dark-gray;
+  border-radius: 3px;
+  background-color: transparent;
+  font: 400 14px/16px "Roboto", sans-serif;
+  color: $white;
+}
+
+.btn {
+  text-align: center;
+  color: $white;
+  font: 400 13.3px/15px "Arial", sans-serif;
+  border-radius: 5px;
+}
+
+.btn-access {
+  @include media (small) {
+    grid-column: span 1;
+  }
+}
+
+.btn-green {
+  background-color: $green;
+}
