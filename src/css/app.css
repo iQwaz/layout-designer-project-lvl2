@@ -87,6 +87,8 @@ button {
   align-items: center;
   grid-column-gap: 50px;
   column-gap: 50px;
+  grid-row-gap: 50px;
+  row-gap: 50px;
 }
 
 .grid-form {
