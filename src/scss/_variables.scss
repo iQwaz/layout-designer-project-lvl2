@@ -4,6 +4,7 @@ $gray: #e0e0e0;
 $dark-gray: #cacaca;
 $dark: #3c3b3d;
 $green: #34c176;
+$dark-green: #268E56;
 $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
@@ -29,3 +30,19 @@ $breakpoints: (
     }
   }
 }
+
+$bg-prices: (
+  free: "subscribe_1.png",
+  standard: "subscribe_2.png",
+  premium: "subscribe_3.png",
+);
+
+@mixin bg-subscription {
+  @each $plan, $file-name in $bg-prices {
+    .bg-#{$plan} {
+      background: no-repeat center/cover url("../images/#{$file-name}");
+    }
+  }
+}
+
+@include bg-subscription;

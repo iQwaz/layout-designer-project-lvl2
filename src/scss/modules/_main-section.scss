@@ -1,3 +1,6 @@
+.background-main {
+  background: no-repeat center/cover url("../images/banner.png");
+}
 
 .input-search {
   box-sizing: border-box;
@@ -25,13 +28,6 @@
   color: $white;
 }
 
-.btn {
-  text-align: center;
-  color: $white;
-  font: 400 13.3px/15px "Arial", sans-serif;
-  border-radius: 5px;
-}
-
 .btn-access {
   @include media (small) {
     grid-column: span 1;
@@ -40,4 +36,8 @@
 
 .btn-green {
   background-color: $green;
+}
+
+.btn-green:hover {
+  background-color: $dark-green;
 }

@@ -1,19 +1,12 @@
 // All grids
 
-.grid-12 {
+.grid-prices {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
   justify-content: space-between;
   align-items: center;
   grid-column-gap: 50px;
   column-gap: 50px;
-}
-
-.grid-header {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 188px 1fr 268px;
-  align-items: center;
 }
 
 .grid-form {

@@ -5,12 +5,4 @@
 @import "general";
 @import "modules/header";
 @import "modules/main-section";
-
-
-.background-main {
-  background: no-repeat center/cover url("../images/banner.png");
-}
-
-.content {
-  margin: 0 auto;
-}
+@import "modules/page-pricing"
