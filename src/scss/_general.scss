@@ -286,6 +286,9 @@ h3 {
 
 .text-size-30-adaptive {
   font: 400 30px/1.5 "#{$base-font-family}", sans-serif;
+  @include media("medium") {
+    font-size: 24px;
+  }
   @include media("small") {
     font-size: 16px;
   }
