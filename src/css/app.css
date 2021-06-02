@@ -405,6 +405,10 @@ h3 {
   margin-left: 24px;
 }
 
+.ml-144 {
+  margin-left: 144px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
@@ -415,6 +419,14 @@ h3 {
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.mr-123 {
+  margin-right: 123px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 .mb-16 {
@@ -466,12 +478,6 @@ h3 {
   width: 100%;
 }
 
-.header-position {
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .absolute {
   position: absolute;
 }
@@ -484,6 +490,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.float-right {
+  float: right;
 }
 
 .gap-3 {
@@ -594,6 +604,12 @@ h3 {
 
 .text-size-64 {
   font: 400 64px/1.5 "Roboto", sans-serif;
+}
+
+.header-position {
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-link {
