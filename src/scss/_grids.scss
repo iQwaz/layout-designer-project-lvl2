@@ -9,13 +9,40 @@
 
 .grid-prices {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
   justify-content: space-between;
   align-items: center;
+  grid-gap: 50px;
+  gap: 50px;
+}
+
+.grid-news {
+  display: grid;
+  margin-bottom: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  grid-template-areas: "image content";
+  justify-content: space-between;
   grid-column-gap: 50px;
   column-gap: 50px;
-  grid-row-gap: 50px;
-  row-gap: 50px;
+  grid-row-gap: 64px;
+  row-gap: 64px;
+  @include media("medium") {
+    grid-template-areas:  "image"
+                          "content";
+  }
+}
+
+.grid-news:nth-of-type(2n) {
+  grid-template-areas: "content image";
+  @include media("medium") {
+    grid-template-areas:  "image"
+                          "content";
+    
+  }
+}
+
+.grid-news:last-of-type {
+  margin-bottom: 0;
 }
 
 @mixin column-span {

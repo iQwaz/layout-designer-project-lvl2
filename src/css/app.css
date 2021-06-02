@@ -90,13 +90,41 @@ button {
 
 .grid-prices {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
   justify-content: space-between;
   align-items: center;
+  grid-gap: 50px;
+  gap: 50px;
+}
+
+.grid-news {
+  display: grid;
+  margin-bottom: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  grid-template-areas: "image content";
+  justify-content: space-between;
   grid-column-gap: 50px;
   column-gap: 50px;
-  grid-row-gap: 50px;
-  row-gap: 50px;
+  grid-row-gap: 64px;
+  row-gap: 64px;
+}
+@media screen and (max-width: 768px) {
+  .grid-news {
+    grid-template-areas: "image" "content";
+  }
+}
+
+.grid-news:nth-of-type(2n) {
+  grid-template-areas: "content image";
+}
+@media screen and (max-width: 768px) {
+  .grid-news:nth-of-type(2n) {
+    grid-template-areas: "image" "content";
+  }
+}
+
+.grid-news:last-of-type {
+  margin-bottom: 0;
 }
 
 .span-1 {
@@ -321,6 +349,10 @@ h3 {
   max-width: 570px;
 }
 
+.w-19 {
+  width: 19px;
+}
+
 .px-20 {
   padding: 0 20px;
 }
@@ -389,12 +421,24 @@ h3 {
   margin-bottom: 16px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-32 {
   margin-bottom: 32px;
 }
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .mb-50 {
@@ -494,8 +538,16 @@ h3 {
   clip: rect(0, 0, 0, 0);
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .text-white {
   color: #ffffff;
+}
+
+.text-orange {
+  color: #f89202;
 }
 
 .text-small {
@@ -508,6 +560,15 @@ h3 {
 
 .text-size-24 {
   font: 400 24px/1.5 "Roboto", sans-serif;
+}
+
+.text-size-30-adaptive {
+  font: 400 30px/1.5 "Roboto", sans-serif;
+}
+@media screen and (max-width: 609px) {
+  .text-size-30-adaptive {
+    font-size: 16px;
+  }
 }
 
 .text-size-32 {
@@ -649,4 +710,28 @@ h3 {
   font: 400 32px/1em "Roboto", sans-serif;
   text-transform: uppercase;
   content: "руб.";
+}
+
+.news-image {
+  max-width: 100%;
+  grid-area: image;
+}
+
+.news-content {
+  grid-area: content;
+}
+
+.news-author {
+  vertical-align: middle;
+}
+
+.btn-news {
+  display: inline-block;
+  padding: 17px 30px;
+  color: #cacaca;
+  border-color: #cacaca;
+}
+
+.btn-news:hover {
+  background-color: rgba(202, 202, 202, 0.2);
 }

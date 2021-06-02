@@ -1,0 +1,23 @@
+.news-image {
+  max-width: 100%;
+  grid-area: image;
+}
+
+.news-content {
+  grid-area: content;
+}
+
+.news-author {
+  vertical-align: middle;
+}
+
+.btn-news {
+  display: inline-block;
+  padding: 17px 30px;
+  color: $dark-gray;
+  border-color: $dark-gray; 
+}
+
+.btn-news:hover {
+  background-color: rgb(202, 202, 202, 0.2);
+}
