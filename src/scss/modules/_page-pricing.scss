@@ -1,15 +1,16 @@
 .pricing-item {
+  box-sizing: border-box;
   border-radius: 16px;
   padding: 24px;
   @include media("mobile") {
-    padding: 16px 24px
+    padding-top: 16px;
   }
 }
 
 .btn-white {
   display: block;
   width: 100%;
-  border: 2px solid $white; 
+  border-color: $white; 
 }
 
 .btn-white:hover {
@@ -18,7 +19,7 @@
 
 .pricing-value {
   width: max-content;
-  font: 400 64px/1 "Roboto", sans-serif;
+  font: 400 64px/1em "Roboto", sans-serif;
 }
 
 .pricing-value::after {
@@ -26,7 +27,7 @@
   left: 16px;
   top: -21px;
 
-  font: 400 32px/1 "Roboto", sans-serif;
+  font: 400 32px/1em "Roboto", sans-serif;
   text-transform: uppercase;
   content: "руб.";
 }

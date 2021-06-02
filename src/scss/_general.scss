@@ -43,9 +43,12 @@ h3 {
 }
 
 .btn {
+  box-sizing: border-box;
+  padding: 20px 0;
   text-align: center;
   color: $white;
   font: 400 13.3px/15px "Arial", sans-serif;
+  border: 1px solid $green;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -243,6 +246,10 @@ h3 {
 
 .text-white {
   color: $white;
+}
+
+.text-small {
+  font: 400 13px/19px "#{$base-font-family}", sans-serif;
 }
 
 .text-size-16 {
