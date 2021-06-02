@@ -1,7 +1,9 @@
 .pricing-item {
-  height: 615px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 24px;
+  @include media("mobile") {
+    padding: 16px 24px
+  }
 }
 
 .btn-white {
@@ -22,9 +24,9 @@
 .pricing-value::after {
   position: relative;
   left: 16px;
-  top: -24px;
+  top: -21px;
 
-  font: 400 32px/1.5 "Roboto", sans-serif;
+  font: 400 32px/1 "Roboto", sans-serif;
   text-transform: uppercase;
   content: "руб.";
 }

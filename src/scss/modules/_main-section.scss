@@ -29,7 +29,7 @@
 }
 
 .btn-access {
-  @include media (small) {
+  @include media ("small") {
     grid-column: span 1;
   }
 }

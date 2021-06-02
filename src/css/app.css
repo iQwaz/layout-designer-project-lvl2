@@ -80,6 +80,14 @@ button {
   cursor: pointer;
 }
 
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+  justify-content: space-between;
+  grid-column-gap: 24px;
+  column-gap: 24px;
+}
+
 .grid-prices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
@@ -89,14 +97,6 @@ button {
   column-gap: 50px;
   grid-row-gap: 50px;
   row-gap: 50px;
-}
-
-.grid-form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
-  justify-content: space-between;
-  grid-column-gap: 24px;
-  column-gap: 24px;
 }
 
 .span-1 {
@@ -288,7 +288,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line-height: 45px;
+  line-height: 36px;
 }
 @media screen and (max-width: 414px) {
   h3 {
@@ -587,9 +587,13 @@ p {
 }
 
 .pricing-item {
-  height: 615px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 24px;
+}
+@media screen and (max-width: 414px) {
+  .pricing-item {
+    padding: 16px 24px;
+  }
 }
 
 .btn-white {
@@ -610,8 +614,8 @@ p {
 .pricing-value::after {
   position: relative;
   left: 16px;
-  top: -24px;
-  font: 400 32px/1.5 "Roboto", sans-serif;
+  top: -21px;
+  font: 400 32px/1 "Roboto", sans-serif;
   text-transform: uppercase;
   content: "руб.";
 }
