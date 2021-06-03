@@ -29,6 +29,8 @@
   @include media("medium") {
     grid-template-areas:  "image"
                           "content";
+    grid-row-gap: 50px;
+    row-gap: 50px;
   }
 }
 
@@ -37,7 +39,9 @@
   @include media("medium") {
     grid-template-areas:  "image"
                           "content";
-    
+    grid-row-gap: 50px;
+    row-gap: 50px;
+
   }
 }
 

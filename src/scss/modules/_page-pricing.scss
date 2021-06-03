@@ -17,17 +17,16 @@
   background-color: rgba(255, 255, 255, 0.2)
 }
 
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .pricing-value {
-  width: max-content;
   font: 400 64px/1em "Roboto", sans-serif;
 }
 
-.pricing-value::after {
-  position: relative;
-  left: 16px;
-  top: -21px;
-
-  font: 400 32px/1em "Roboto", sans-serif;
-  text-transform: uppercase;
-  content: "руб.";
+.pricing-curency {
+  font: 400 32px/1.5 "Roboto", sans-serif;
 }

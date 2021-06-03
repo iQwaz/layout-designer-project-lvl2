@@ -1,5 +1,5 @@
 .news-image {
-  max-width: 100%;
+  width: 100%;
   grid-area: image;
 }
 
@@ -11,9 +11,15 @@
   vertical-align: middle;
 }
 
+.news-heading {
+  @include media("medium") {
+    margin-bottom: 16px;
+  }
+}
+
 .btn-news {
   display: inline-block;
-  padding: 17px 30px;
+  padding: 16px 30px;
   color: $dark-gray;
   border-color: $dark-gray; 
 }

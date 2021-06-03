@@ -40,7 +40,7 @@ $bg-prices: (
 @mixin bg-subscription {
   @each $plan, $file-name in $bg-prices {
     .bg-#{$plan} {
-      background: no-repeat center/cover url("../images/#{$file-name}");
+      background: no-repeat center/containe url("../images/#{$file-name}");
     }
   }
 }
