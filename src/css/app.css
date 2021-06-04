@@ -798,3 +798,7 @@ h3 {
   border-radius: 32px;
   padding: 16px 40px;
 }
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
