@@ -49,6 +49,17 @@
   margin-bottom: 0;
 }
 
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+//TODO: Сократить количство сеток, а все стили запихнуть в атомарные
+
 @mixin column-span {
   @for $n from 1 through 12 {
     .span-#{$n} {

@@ -30,11 +30,16 @@
   }
 }
 
-.menu-item {
-  cursor: pointer;
+.menu-link {
+  text-decoration: none;
+  color: $dark-gray;
 }
 
-.menu-item:hover {
+.menu-link:visited {
+  color: $dark-gray;
+}
+
+.menu-link:hover {
   color: $gray;
 }
 

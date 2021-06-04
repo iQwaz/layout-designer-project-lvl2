@@ -130,6 +130,15 @@ button {
   margin-bottom: 0;
 }
 
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
 .span-1 {
   grid-column: span 1;
 }
@@ -617,6 +626,10 @@ h3 {
   font: 400 64px/1.5 "Roboto", sans-serif;
 }
 
+.h-size-18 {
+  font: 400 18px/1.5 "Roboto", sans-serif;
+}
+
 .header-position {
   top: 25px;
   left: 50%;
@@ -649,11 +662,16 @@ h3 {
   }
 }
 
-.menu-item {
-  cursor: pointer;
+.menu-link {
+  text-decoration: none;
+  color: #cacaca;
 }
 
-.menu-item:hover {
+.menu-link:visited {
+  color: #cacaca;
+}
+
+.menu-link:hover {
   color: #e0e0e0;
 }
 
