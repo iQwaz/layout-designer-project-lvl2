@@ -1,13 +1,13 @@
 .bg-free {
-  background: no-repeat center/containe url("../images/subscribe_1.png");
+  background: no-repeat center/contain url("../images/subscribe_1.png");
 }
 
 .bg-standard {
-  background: no-repeat center/containe url("../images/subscribe_2.png");
+  background: no-repeat center/contain url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background: no-repeat center/containe url("../images/subscribe_3.png");
+  background: no-repeat center/contain url("../images/subscribe_3.png");
 }
 
 /* Fonts: */
