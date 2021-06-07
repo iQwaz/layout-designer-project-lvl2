@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/app.css">
-
-    <title>Music Box - qwaz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/artist.css">
+  <title>Music Box - qwaz</title>
 
 </head>
 <body>
-
+  <header class="absolute flex row-gap-17 justify-between header-position maxw-1240 w-100pr">
+    <a class="logo-link flex no-wrap uppercase bold ml-20" href="#">
+      <img class="logo mr-16" src="./images/logo.svg" alt="MusicBox Logo">
+      <span class="header-text">Music Box</span>
+    </a>
+    <nav class="navigation flex-grow ml-20">
+      <ul class="header-text menu flex row-gap-3 uppercase bold">
+        <li class="mr-24"><a class="menu-link" href="#">Главная</a></li>
+        <li class="mr-24"><a class="menu-link" href="#">Каталог</a></li>
+        <li class="mr-24"><a class="menu-link" href="#">Исполнители</a></li>
+        <li class="mr-24"><a class="menu-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <form action="#" class="form-search mx-20">
+      <label for="search" class="sr-only">Поиск</label>
+      <input type="text" name="search" id="search" class="input-search uppercase pl-10" placeholder="Поиск...">
+    </form>
+  </header>
+  <!-- Main section -->
+  <main>
+    <section id="page-description" class="background-artist px-20">
+      <div class="mx-auto py-200 maxw-1240">
+        <h1 class="bold uppercase text-white mb-16">Morten Harket</h1>
+        <p class="mb-16 text-white text-size-16 mb-48">24 875 поклонников</p>
+        <div class="flex column-gap-24 row-gap-24">
+          <!-- TODO: Добавить иконки на кнопки и сделать рефакторинг всего -->
+          <a class="btn btn-purple uppercase w-200 py-20 px-30" href="#">Микс</a>
+          <a class="btn btn-red uppercase w-200 py-20 px-30" href="#">В избранное</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gradient">
+    <div class="grid-footer  maxw-1200 mx-auto px-20 py-3rem">
+      <div class="link-list">
+        <h2 class="h-size-18 bold uppercase mb-16">О нас</h2>
+        <ul>
+          <li class=" text-size-16"><a class="menu-link" href="#">История компании</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Карьера</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Особенности</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Пресса</a></li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <h2 class="h-size-18 bold uppercase mb-16">Поддержка</h2>
+        <ul>
+          <li class=" text-size-16"><a class="menu-link" href="#">База знаний</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Тарифы</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Мобильное приложение</a></li>
+          <li class=" text-size-16"><a class="menu-link" href="#">Условия использования</a></li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <h2 class="h-size-18 bold uppercase mb-16">Контакты</h2>
+        <ul>
+          <li class=" text-size-16"><a class="menu-link" href="mailto:hello@music.box">hello@music.box</a></li>
+          <li class="text-size-16">Russia, Moscow. Music Box studio</li>
+          <li class="text-size-16">+ 7 499 999 99 99</li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <h2 class="h-size-18 bold uppercase mb-16">Подписывайтесь</h2>
+        <ul class="flex no-wrap column-gap-24">
+          <li class="text-size-16"><a href="#"><img src="./images/GooglePlus.png" alt="Google+"></a></li>
+          <li class="text-size-16"><a href="#"><img src="./images/Twitter.png" alt="Twitter"></a></li>
+          <li class="text-size-16"><a href="#"><img src="./images/Facebook.png" alt="Facebook"></a></li>
+          <li class="text-size-16"><a href="#"><img src="./images/Instagram.png" alt="Instagram"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-menu py-2rem">
+      <ul class="flex flex-row-adaptive row-gap-16 column-gap-24 maxw-1200 mx-auto px-20">
+        <li class="text-size-16"><a class="menu-link" href="#">Магазин</a></li>
+        <li class="text-size-16"><a class="menu-link" href="#">Обслуживание</a></li>
+        <li class="text-size-16"><a class="menu-link" href="#">Блог</a></li>
+        <li class="text-size-16"><a class="menu-link" href="#">Поддержка</a></li>
+        <li class="text-size-16"><a class="menu-link" href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

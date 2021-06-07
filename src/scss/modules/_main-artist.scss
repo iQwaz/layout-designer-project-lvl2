@@ -1,0 +1,23 @@
+.background-artist {
+  background: no-repeat center/cover url("../images/Morten_Harket.png");
+}
+
+.btn-purple {
+  background-color: $purple;
+  border-color: $purple;
+}
+
+.btn-purple:hover {
+  background-color: $dark-purple;
+  border-color: $dark-purple;
+}
+
+.btn-red {
+  background-color: $red;
+  border-color: $red;
+}
+
+.btn-red:hover {
+  background-color: $dark-red;
+  border-color: $dark-red;
+}

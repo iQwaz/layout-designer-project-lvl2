@@ -68,16 +68,27 @@ h3 {
   max-width: 570px;
 }
 
+.w-200 {
+  width: 200px;
+}
+
 .w-19 {
   width: 19px
 }
 
 .px-20 {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .py-20 {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .py-21 {
@@ -250,6 +261,10 @@ h3 {
 
 .row-gap-16 {
   row-gap: 16px;
+}
+
+.row-gap-24 {
+  row-gap: 24px;
 }
 
 .column-gap-24 {

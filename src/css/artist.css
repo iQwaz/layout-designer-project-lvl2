@@ -743,124 +743,28 @@ h3 {
   background-color: #3c3b3d;
 }
 
-.background-main {
-  background: no-repeat center/cover url("../images/banner.png");
+.background-artist {
+  background: no-repeat center/cover url("../images/Morten_Harket.png");
 }
 
-.input-main {
-  box-sizing: border-box;
-  max-width: 100%;
-  min-height: 50px;
-  margin-bottom: 1.5rem;
-  border: solid 2px #cacaca;
-  border-radius: 3px;
-  background-color: transparent;
-  font: 400 14px/16px "Roboto", sans-serif;
-  color: #ffffff;
+.btn-purple {
+  background-color: #5328a1;
+  border-color: #5328a1;
 }
 
-@media screen and (max-width: 609px) {
-  .btn-access {
-    grid-column: span 1;
-  }
+.btn-purple:hover {
+  background-color: #381b6d;
+  border-color: #381b6d;
 }
 
-.btn-green {
-  background-color: #34c176;
+.btn-red {
+  background-color: #95390c;
+  border-color: #95390c;
 }
 
-.btn-green:hover {
-  background-color: #268E56;
-}
-
-.pricing-item {
-  box-sizing: border-box;
-  border-radius: 16px;
-  padding: 24px;
-}
-@media screen and (max-width: 414px) {
-  .pricing-item {
-    padding-top: 16px;
-  }
-}
-
-.btn-white {
-  display: block;
-  width: 100%;
-  border-color: #ffffff;
-}
-
-.btn-white:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.pricing-value {
-  font: 400 64px/1em "Roboto", sans-serif;
-}
-
-.pricing-curency {
-  font: 400 32px/1.5 "Roboto", sans-serif;
-}
-
-.news-image {
-  width: 100%;
-  grid-area: image;
-}
-
-.news-content {
-  grid-area: content;
-}
-
-.news-author {
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 768px) {
-  .news-heading {
-    margin-bottom: 16px;
-  }
-}
-
-.btn-news {
-  display: inline-block;
-  padding: 16px 30px;
-  color: #cacaca;
-  border-color: #cacaca;
-}
-
-.btn-news:hover {
-  background-color: rgba(202, 202, 202, 0.2);
-}
-
-.app-img {
-  box-sizing: border-box;
-  width: 50%;
-  padding-left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .app-img {
-    float: none;
-    width: 100%;
-    padding: 0;
-  }
-}
-
-.btn-app {
-  display: block;
-  width: max-content;
-  border-color: #f89202;
-  background-color: #f89202;
-  border-radius: 32px;
-  padding: 16px 40px;
+.btn-red:hover {
+  background-color: #622507;
+  border-color: #622507;
 }
 
 .bg-gradient {
