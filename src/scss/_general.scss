@@ -88,6 +88,16 @@ h3 {
   padding: 200px 0;
 }
 
+.py-3rem {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-2rem {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-10 {
   padding-left: 10px;
 }
@@ -218,16 +228,32 @@ h3 {
   
 }
 
+.flex-row-adaptive {
+  flex-direction: row;
+  @include media ("mobile") {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .float-right {
   float: right;
 }
 
-.gap-3{
+.row-gap-3 {
   row-gap: 7px;
 }
 
-.gap-17{
+.row-gap-17 {
   row-gap: 17px;
+}
+
+.row-gap-16 {
+  row-gap: 16px;
+}
+
+.column-gap-24 {
+  column-gap: 24px;
 }
 
 .justify-between {
@@ -290,19 +316,21 @@ h3 {
 }
 
 .text-small {
-  font: 400 12.8px/19px "#{$base-font-family}", sans-serif;
+  font-size: 12.8px;
+  line-height: 19px;
 }
 
 .text-size-16 {
-  font: 400 16px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .text-size-24 {
-  font: 400 24px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 24px;
 }
 
 .text-size-30-adaptive {
-  font: 400 30px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 30px;
   @include media("medium") {
     font-size: 24px;
   }
@@ -312,25 +340,26 @@ h3 {
 }
 
 .text-size-32 {
-  font: 400 32px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 32px;
 }
 
 .text-size-40 {
-  font: 400 40px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 40px;
 }
 
 .text-size-48 {
-  font: 400 48px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 48px;
 }
 
 .text-size-56 {
-  font: 400 56px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 56px;
 }
 
 .text-size-64 {
-  font: 400 64px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 64px;
 }
 
 .h-size-18 {
-  font: 400 18px/1.5 "#{$base-font-family}", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 } 
