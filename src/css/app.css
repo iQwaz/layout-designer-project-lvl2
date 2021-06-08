@@ -87,7 +87,7 @@ button {
   column-gap: 24px;
 }
 
-.grid-prices {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
   justify-content: space-between;
@@ -137,6 +137,29 @@ button {
   grid-row-gap: 30px;
   column-gap: 40px;
   row-gap: 30px;
+}
+
+.grid-tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: space-between;
+  grid-column-gap: 50px;
+  column-gap: 50px;
+  grid-row-gap: 25px;
+  row-gap: 25px;
+}
+@media screen and (max-width: 414px) {
+  .grid-tracks {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
+
+.grid-track-item {
+  display: grid;
+  grid-template-columns: 55px 1fr 30px;
+  align-items: center;
+  grid-gap: 15px;
+  gap: 15px;
 }
 
 .span-1 {
