@@ -389,6 +389,7 @@ h3 {
 
 .text-size-30-adaptive {
   font-size: 30px;
+  line-height: 1.5;
   @include media("medium") {
     font-size: 24px;
   }

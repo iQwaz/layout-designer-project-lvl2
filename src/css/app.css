@@ -711,6 +711,7 @@ h3 {
 
 .text-size-30-adaptive {
   font-size: 30px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .text-size-30-adaptive {
