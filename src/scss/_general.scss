@@ -10,7 +10,7 @@ h1 {
   font-size: 60px;
   line-height: 90px;
   @include media("small") {
-    padding-top: 47px;
+    margin-top: 50px;
     font-size: 45px;
     line-height: 57px;
   }
