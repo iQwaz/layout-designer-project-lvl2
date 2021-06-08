@@ -394,13 +394,21 @@ h3 {
     grid-column: span 1;
   }
 }
+.btn-white {
+  display: block;
+  width: 100%;
+  border: solid 1px #ffffff;
+}
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .btn-app {
   display: block;
+  padding: 16px 40px;
   width: max-content;
   background-color: #f89202;
   border: solid 1px #f89202;
   border-radius: 32px;
-  padding: 16px 40px;
 }
 .btn-news {
   display: inline-block;
@@ -689,7 +697,7 @@ h3 {
 
 .text-small {
   font-size: 12.8px;
-  line-height: 19px;
+  line-height: 1.5;
 }
 
 .text-size-16 {
@@ -703,6 +711,7 @@ h3 {
 
 .text-size-30-adaptive {
   font-size: 30px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .text-size-30-adaptive {
