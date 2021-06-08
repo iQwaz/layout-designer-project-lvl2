@@ -767,6 +767,16 @@ h3 {
   border-color: #622507;
 }
 
+.btn svg {
+  fill: #ffffff;
+  width: 20px;
+}
+
+.btn svg:hover {
+  fill: #34c176;
+  width: 20px;
+}
+
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
