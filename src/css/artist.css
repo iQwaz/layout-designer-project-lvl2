@@ -162,6 +162,20 @@ button {
   gap: 15px;
 }
 
+.grid-discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-column-gap: 50px;
+  column-gap: 50px;
+  grid-row-gap: 25px;
+  row-gap: 25px;
+}
+@media screen and (max-width: 414px) {
+  .grid-discography {
+    grid-template-columns: repeat(auto-fit, 137px);
+  }
+}
+
 .span-1 {
   grid-column: span 1;
 }
@@ -797,6 +811,15 @@ h3 {
 
 .album-cover-small {
   width: 55px;
+}
+
+.discography-cover {
+  width: 250px;
+}
+@media screen and (max-width: 414px) {
+  .discography-cover {
+    width: 137px;
+  }
 }
 
 .bg-gradient {

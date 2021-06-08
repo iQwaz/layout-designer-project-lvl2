@@ -1,0 +1,6 @@
+.discography-cover {
+  width: 250px;
+  @include media ("mobile") {
+    width: 137px;
+  }
+}

@@ -79,7 +79,17 @@
   gap: 15px;
 }
 
-
+.grid-discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-column-gap: 50px;
+  column-gap: 50px;
+  grid-row-gap: 25px;
+  row-gap: 25px;
+  @include media("mobile") {
+    grid-template-columns: repeat(auto-fit, 137px);
+  }
+}
 
 
 //TODO: Сократить количство сеток, а все стили запихнуть в атомарные
