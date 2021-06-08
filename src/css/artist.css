@@ -376,13 +376,40 @@ h3 {
 
 .btn {
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 20px 30px;
   text-align: center;
   color: #ffffff;
-  font: 400 13.3px/15px "Arial", sans-serif;
-  border: 1px solid #34c176;
   border-radius: 5px;
   text-decoration: none;
+}
+.btn-green {
+  background-color: #34c176;
+  border: 1px solid #34c176;
+}
+.btn-green:hover {
+  background-color: #268E56;
+}
+@media screen and (max-width: 609px) {
+  .btn-access {
+    grid-column: span 1;
+  }
+}
+.btn-app {
+  display: block;
+  width: max-content;
+  background-color: #f89202;
+  border: solid 1px #f89202;
+  border-radius: 32px;
+  padding: 16px 40px;
+}
+.btn-news {
+  display: inline-block;
+  padding: 16px 30px;
+  color: #cacaca;
+  border: solid 1px #cacaca;
+}
+.btn-news:hover {
+  background-color: rgba(202, 202, 202, 0.2);
 }
 
 /* Atomic styles: */

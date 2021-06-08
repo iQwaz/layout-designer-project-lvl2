@@ -13,17 +13,3 @@
   font: 400 14px/16px "Roboto", sans-serif;
   color: $white;
 }
-
-.btn-access {
-  @include media ("small") {
-    grid-column: span 1;
-  }
-}
-
-.btn-green {
-  background-color: $green;
-}
-
-.btn-green:hover {
-  background-color: $dark-green;
-}
