@@ -323,7 +323,7 @@ button {
 body {
   position: relative;
   min-width: 320px;
-  font: 400 18px/1.5 "Roboto", sans-serif;
+  font: 400 16px/1.5 "Roboto", sans-serif;
   color: #cacaca;
   background: #08020d;
 }
