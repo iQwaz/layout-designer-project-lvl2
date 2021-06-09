@@ -11,3 +11,11 @@
     padding: 0;
   }
 }
+
+.app-flex {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  @include media('small') {
+    flex-direction: column;
+  }
+}

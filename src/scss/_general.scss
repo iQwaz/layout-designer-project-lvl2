@@ -288,16 +288,16 @@ h3 {
   
 }
 
+.basis-600 {
+  flex-basis: 600px;
+}
+
 .flex-row-adaptive {
   flex-direction: row;
   @include media ("mobile") {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-.float-right {
-  float: right;
 }
 
 .row-gap-3 {
@@ -365,6 +365,10 @@ h3 {
   border: 0;
 
   clip: rect(0, 0, 0, 0);
+}
+
+.d-block {
+  display: block;
 }
 
 .inline-block {

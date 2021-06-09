@@ -323,7 +323,7 @@ button {
 body {
   position: relative;
   min-width: 320px;
-  font: 400 18px/1.5 "Roboto", sans-serif;
+  font: 400 16px/1.5 "Roboto", sans-serif;
   color: #cacaca;
   background: #08020d;
 }
@@ -334,7 +334,7 @@ h1 {
 }
 @media screen and (max-width: 609px) {
   h1 {
-    padding-top: 47px;
+    margin-top: 50px;
     font-size: 45px;
     line-height: 57px;
   }
@@ -461,7 +461,13 @@ h3 {
 }
 
 .py-200 {
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .py-3rem {
@@ -683,6 +689,10 @@ h3 {
   clip: rect(0, 0, 0, 0);
 }
 
+.d-block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -747,6 +757,10 @@ h3 {
 .h-size-18 {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.max-content {
+  width: max-content;
 }
 
 .header-position {
@@ -814,6 +828,10 @@ h3 {
   border: none;
   border-radius: 12.5px;
   background-color: #3c3b3d;
+}
+
+.l-h-16 {
+  line-height: 16px;
 }
 
 .background-artist {
