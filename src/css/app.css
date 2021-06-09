@@ -433,6 +433,10 @@ h3 {
   max-width: 570px;
 }
 
+.maxw-600 {
+  max-width: 600px;
+}
+
 .w-200 {
   width: 200px;
 }
@@ -609,10 +613,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.basis-600 {
-  flex-basis: 600px;
 }
 
 .flex-row-adaptive {
