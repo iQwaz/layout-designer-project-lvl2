@@ -73,7 +73,8 @@
 
 .grid-track-item {
   display: grid;
-  grid-template-columns: 55px 1fr 30px;
+  grid-template-columns: max-content max-content 1fr;
+  justify-content: right;
   align-items: center;
   grid-gap:15px;
   gap: 15px;
