@@ -1,8 +1,8 @@
 body {
   position: relative;
   min-width: 320px;
-  font: 400 16px/1.5 "#{$base-font-family}", sans-serif;
   color: $dark-gray;
+  font: 400 16px/1.5 "#{$base-font-family}", sans-serif;
   background: $black;
 }
 
@@ -45,10 +45,10 @@ h3 {
 .btn {
   box-sizing: border-box;
   padding: 20px 30px;
-  text-align: center;
   color: $white;
-  border-radius: 5px;
+  text-align: center;
   text-decoration: none;
+  border-radius: 5px;
 
   &-green {
     background-color: $green;
@@ -60,7 +60,7 @@ h3 {
   }
 
   &-access {
-    @include media ("small") {
+    @include media("small") {
       grid-column: span 1;
     }
   }
@@ -76,8 +76,8 @@ h3 {
 
   &-app {
     display: block;
-    padding: 16px 40px;
     width: max-content;
+    padding: 16px 40px;
     background-color: $orange;
     border: solid 1px $orange;
     border-radius: 32px;
@@ -93,9 +93,7 @@ h3 {
       background-color: rgb(202, 202, 202, 0.2);
     }
   }
-  
 }
-
 
 /* Atomic styles: */
 .maxw-1200 {
@@ -105,7 +103,6 @@ h3 {
 .maxw-1240 {
   max-width: 1240px;
 }
-
 
 .maxw-570 {
   max-width: 570px;
@@ -120,17 +117,17 @@ h3 {
 }
 
 .w-19 {
-  width: 19px
+  width: 19px;
 }
 
 .px-20 {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .px-30 {
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 }
 
 .py-20 {
@@ -298,12 +295,11 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  
 }
 
 .flex-row-adaptive {
   flex-direction: row;
-  @include media ("mobile") {
+  @include media("mobile") {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -373,11 +369,8 @@ h3 {
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0, 0, 0, 0);
 }
 
@@ -445,7 +438,7 @@ h3 {
 .h-size-18 {
   font-size: 18px;
   line-height: 1.5;
-} 
+}
 
 .max-content {
   width: max-content;

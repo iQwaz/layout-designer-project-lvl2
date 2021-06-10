@@ -4,13 +4,13 @@ $gray: #e0e0e0;
 $dark-gray: #cacaca;
 $dark: #3c3b3d;
 $green: #34c176;
-$dark-green: #268E56;
+$dark-green: #268e56;
 $orange: #f89202;
 $purple: #5328a1;
 $dark-purple: #381b6d;
 $red: #95390c;
 $dark-red: #622507;
-$white: #ffffff;
+$white: #fff;
 
 // All mixins and global variables
 
@@ -18,16 +18,16 @@ $breakpoints: (
   breakpoint-mobile: 414px,
   breakpoint-small: 609px,
   breakpoint-medium: 768px,
-  breakpoint-large: 1240px
+  breakpoint-large: 1240px,
 );
 
 @mixin media($breakpoint: "small", $breakpoint-width: null) {
   @if $breakpoint == "custom" {
-    @media screen and (max-width: $breakpoint-width){
+    @media screen and (max-width: $breakpoint-width) {
       @content;
     }
-    } @else {
-    @media screen and (max-width: map-get($breakpoints , "breakpoint-#{$breakpoint}")){
+  } @else {
+    @media screen and (max-width: map-get($breakpoints , "breakpoint-#{$breakpoint}")) {
       @content;
     }
   }

@@ -7,9 +7,9 @@
   max-width: 100%;
   min-height: 50px;
   margin-bottom: 1.5rem;
+  color: $white;
+  font: 400 14px/16px "Roboto", sans-serif;
+  background-color: transparent;
   border: solid 2px $dark-gray;
   border-radius: 3px;
-  background-color: transparent;
-  font: 400 14px/16px "Roboto", sans-serif;
-  color: $white;
 }

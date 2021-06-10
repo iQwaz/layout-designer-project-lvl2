@@ -1,35 +1,36 @@
 // All grids
 .grid-form {
   display: grid;
+  grid-column-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
   justify-content: space-between;
-  grid-column-gap: 24px;
   column-gap: 24px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
-  justify-content: space-between;
-  align-items: center;
   grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
   gap: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .grid-news {
   display: grid;
-  margin-bottom: 64px;
-  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
-  grid-template-areas: "image content";
-  justify-content: space-between;
-  grid-column-gap: 50px;
-  column-gap: 50px;
   grid-row-gap: 64px;
+  grid-column-gap: 50px;
+  grid-template-areas: "image content";
+  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  justify-content: space-between;
+  margin-bottom: 64px;
+  column-gap: 50px;
   row-gap: 64px;
   @include media("medium") {
-    grid-template-areas:  "image"
-                          "content";
     grid-row-gap: 50px;
+    grid-template-areas:
+      "image"
+      "content";
     row-gap: 50px;
   }
 }
@@ -37,11 +38,11 @@
 .grid-news:nth-of-type(2n) {
   grid-template-areas: "content image";
   @include media("medium") {
-    grid-template-areas:  "image"
-                          "content";
     grid-row-gap: 50px;
+    grid-template-areas:
+      "image"
+      "content";
     row-gap: 50px;
-
   }
 }
 
@@ -51,20 +52,20 @@
 
 .grid-footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-column-gap: 40px;
   grid-row-gap: 30px;
+  grid-column-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   column-gap: 40px;
   row-gap: 30px;
 }
 
 .grid-tracks {
   display: grid;
+  grid-row-gap: 25px;
+  grid-column-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
-  grid-column-gap: 50px;
   column-gap: 50px;
-  grid-row-gap: 25px;
   row-gap: 25px;
   @include media("mobile") {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -73,25 +74,24 @@
 
 .grid-track-item {
   display: grid;
+  grid-gap: 15px;
   grid-template-columns: max-content max-content 1fr;
-  justify-content: right;
-  align-items: center;
-  grid-gap:15px;
   gap: 15px;
+  align-items: center;
+  justify-content: right;
 }
 
 .grid-discography {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-column-gap: 50px;
-  column-gap: 50px;
   grid-row-gap: 25px;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  column-gap: 50px;
   row-gap: 25px;
   @include media("mobile") {
     grid-template-columns: repeat(auto-fit, 137px);
   }
 }
-
 
 //TODO: Сократить количство сеток, а все стили запихнуть в атомарные
 

@@ -1,7 +1,7 @@
 .pricing-item {
   box-sizing: border-box;
-  border-radius: 16px;
   padding: 24px;
+  border-radius: 16px;
   @include media("mobile") {
     padding-top: 16px;
   }
@@ -9,8 +9,8 @@
 
 .pricing-container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .pricing-value {
