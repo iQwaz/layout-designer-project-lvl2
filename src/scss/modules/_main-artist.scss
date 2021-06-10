@@ -22,7 +22,7 @@
   border-color: $dark-red;
 }
 
-.btn svg {
-  fill: $white;
+.btn-icon {
   width: 20px;
+  filter: invert(100%);
 }

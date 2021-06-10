@@ -490,6 +490,14 @@ h3 {
   padding-top: 100px;
 }
 
+.pt-250 {
+  padding-top: 250px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
 .mx-auto {
   margin: 0 auto;
 }
@@ -536,6 +544,10 @@ h3 {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-50 {
+  margin-top: 50px;
 }
 
 .mb-16 {
@@ -861,9 +873,9 @@ h3 {
   border-color: #622507;
 }
 
-.btn svg {
-  fill: #ffffff;
+.btn-icon {
   width: 20px;
+  filter: invert(100%);
 }
 
 .album-cover-small {
