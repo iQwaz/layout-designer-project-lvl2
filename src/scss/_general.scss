@@ -1,19 +1,25 @@
 body {
   position: relative;
+
   min-width: 320px;
+
   color: $dark-gray;
   font: 400 16px/1.5 "#{$base-font-family}", sans-serif;
+
   background: $black;
 }
 
 h1 {
   font-size: 60px;
   line-height: 90px;
+
   @include media("small") {
     margin-top: 50px;
+
     font-size: 45px;
     line-height: 57px;
   }
+
   @include media("mobile") {
     font-size: 30px;
     line-height: 45px;
@@ -23,10 +29,12 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 57px;
+
   @include media("small") {
     font-size: 27px;
     line-height: 43px;
   }
+
   @include media("mobile") {
     font-size: 18px;
     line-height: 27px;
@@ -36,6 +44,7 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 36px;
+
   @include media("mobile") {
     font-size: 16px;
     line-height: 24px;
@@ -45,9 +54,11 @@ h3 {
 .btn {
   box-sizing: border-box;
   padding: 20px 30px;
+
   color: $white;
   text-align: center;
   text-decoration: none;
+
   border-radius: 5px;
 
   &-green {
@@ -64,9 +75,11 @@ h3 {
       grid-column: span 1;
     }
   }
+
   &-white {
     display: block;
     width: 100%;
+
     border: solid 1px $white;
 
     &:hover {
@@ -78,6 +91,7 @@ h3 {
     display: block;
     width: max-content;
     padding: 16px 40px;
+
     background-color: $orange;
     border: solid 1px $orange;
     border-radius: 32px;
@@ -86,7 +100,9 @@ h3 {
   &-news {
     display: inline-block;
     padding: 16px 30px;
+
     color: $dark-gray;
+
     border: solid 1px $dark-gray;
 
     &:hover {
@@ -227,6 +243,7 @@ h3 {
 
 .mt-50-adaptive {
   margin-top: 50px;
+
   @include media("small") {
     margin-top: 25px;
   }
@@ -274,6 +291,7 @@ h3 {
 
 .mb-32-adaptive {
   margin-bottom: 32px;
+
   @include media("small") {
     margin-bottom: 16px;
   }
@@ -299,6 +317,7 @@ h3 {
 
 .flex-row-adaptive {
   flex-direction: row;
+
   @include media("mobile") {
     flex-direction: column;
     align-items: flex-start;
@@ -307,6 +326,7 @@ h3 {
 
 .gap-16 {
   row-gap: 16px;
+
   column-gap: 16px;
 }
 
@@ -364,13 +384,17 @@ h3 {
 
 .sr-only {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
+
   white-space: nowrap;
+
   border: 0;
+
   clip: rect(0, 0, 0, 0);
 }
 
@@ -407,9 +431,11 @@ h3 {
 .text-size-30-adaptive {
   font-size: 30px;
   line-height: 1.5;
+
   @include media("medium") {
     font-size: 24px;
   }
+
   @include media("small") {
     font-size: 16px;
   }

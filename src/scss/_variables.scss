@@ -26,8 +26,10 @@ $breakpoints: (
     @media screen and (max-width: $breakpoint-width) {
       @content;
     }
-  } @else {
-    @media screen and (max-width: map-get($breakpoints , "breakpoint-#{$breakpoint}")) {
+  }
+  @else {
+
+    @media screen and (max-width: map-get($breakpoints, "breakpoint-#{$breakpoint}")) {
       @content;
     }
   }
