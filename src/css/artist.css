@@ -433,6 +433,10 @@ h3 {
   max-width: 570px;
 }
 
+.maxw-600 {
+  max-width: 600px;
+}
+
 .w-200 {
   width: 200px;
 }
@@ -468,16 +472,6 @@ h3 {
 .py-100 {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.py-3rem {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-2rem {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pl-10 {
@@ -621,8 +615,9 @@ h3 {
   }
 }
 
-.float-right {
-  float: right;
+.gap-16 {
+  row-gap: 16px;
+  column-gap: 16px;
 }
 
 .row-gap-3 {
@@ -763,6 +758,14 @@ h3 {
   width: max-content;
 }
 
+.border-box {
+  box-sizing: border-box;
+}
+
+.h-24 {
+  height: 24px;
+}
+
 .header-position {
   top: 25px;
   left: 50%;
@@ -886,4 +889,20 @@ h3 {
 
 .footer-menu {
   border-top: solid 1px #e0e0e0;
+}
+
+.top-footer {
+  padding-top: 62px;
+  padding-bottom: 72px;
+}
+
+.bottom-footer {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+@media screen and (max-width: 414px) {
+  .footer-menu a {
+    width: 100%;
+  }
 }
