@@ -224,8 +224,11 @@ h3 {
   margin-top: 16px;
 }
 
-.mt-50 {
+.mt-50-adaptive {
   margin-top: 50px;
+  @include media("small") {
+    margin-top: 25px;
+  }
 }
 
 .mb-16 {
