@@ -1,4 +1,4 @@
-#Second project of Layout Designer profession on Hexlet.io
+# Second project of Layout Designer profession on Hexlet.io
 
 It needs to create two pages of "Music Box" portal. In this project I implement adaptive layout on grid and flex.
 
